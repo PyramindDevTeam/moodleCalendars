@@ -1,0 +1,59 @@
+<-- Head injectiong for the big-container, small-container, and
+responsive-iframe-container classes
+-->
+<style>
+ @media (max-width: 650px) {
+     .big-container {
+         display: none;
+     }
+ }
+ @media (min-width: 651px) {
+     .small-container {
+         display: none;
+     }
+ }
+
+ .responsive-iframe-container {
+     position: relative;
+     padding-bottom: 30px;
+     padding-top: 30px;
+     min-height: 800px;
+     overflow: hidden;
+ }
+ .responsive-iframe-container iframe,
+ .responsive-iframe-container object,
+ .responsive-iframe-container embed {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+ }
+</style>
+
+
+<div class="big-container responsive-iframe-container">
+<iframe
+  src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=cHlyYW1pbmQuY29tXzE4ODRnM2djZmtqbmFpNGRsbXF0MTIyNmE0am9xNmdiNmdxM2VkMWc2NHMzMGM5bDY4QHJlc291cmNlLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=cHlyYW1pbmQuY29tXzE4OGRvbWoydmttcG9pM2htb3VtcTNvdWY0MmxhNmdiNm9wamVkcGs2b29qaWQ5cDY0QHJlc291cmNlLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=cHlyYW1pbmQuY29tXzE4ODc1ZDM4Z2Q5Z3Vpc3NoN28yczVyNmNwMTk2NmdiNmdxajJkaHA3NHAzNGRobTY0QHJlc291cmNlLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=cHlyYW1pbmQuY29tXzE4ODByazlsMW5rY2NnYnRqamt1MzIzanNjbHF1NmdiNmdzM2NlMW82b3BqaWU5aDYwQHJlc291cmNlLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=cHlyYW1pbmQuY29tXzE4OGFmc2dpODgzN3FnMmhnaGttNGp0ZWlsbHVpNmdhNzRwamlkaG02NG9qYWNwakByZXNvdXJjZS5jYWxlbmRhci5nb29nbGUuY29t&amp;src=cHlyYW1pbmQuY29tXzE4ODM4MmI1MXYxNjZoanFudmFnNHM2azY2M2VzNmdiNmtxMzRjcGw2Y3AzYWRoZzYwQHJlc291cmNlLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23A79B8E&amp;color=%23616161&amp;color=%238E24AA&amp;color=%237CB342&amp;color=%234285F4&amp;color=%23D50000&amp;showTitle=0&amp;showNav=0&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=1&amp;mode=WEEK"
+  style="border-width:0" width="100%" height="800" frameborder="0" scrolling="no"></iframe>
+</div>
+
+<div class="small-container responsive-iframe-container">
+  <iframe
+    src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=cHlyYW1pbmQuY29tXzE4ODRnM2djZmtqbmFpNGRsbXF0MTIyNmE0am9xNmdiNmdxM2VkMWc2NHMzMGM5bDY4QHJlc291cmNlLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=cHlyYW1pbmQuY29tXzE4OGRvbWoydmttcG9pM2htb3VtcTNvdWY0MmxhNmdiNm9wamVkcGs2b29qaWQ5cDY0QHJlc291cmNlLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=cHlyYW1pbmQuY29tXzE4ODc1ZDM4Z2Q5Z3Vpc3NoN28yczVyNmNwMTk2NmdiNmdxajJkaHA3NHAzNGRobTY0QHJlc291cmNlLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=cHlyYW1pbmQuY29tXzE4ODByazlsMW5rY2NnYnRqamt1MzIzanNjbHF1NmdiNmdzM2NlMW82b3BqaWU5aDYwQHJlc291cmNlLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=cHlyYW1pbmQuY29tXzE4OGFmc2dpODgzN3FnMmhnaGttNGp0ZWlsbHVpNmdhNzRwamlkaG02NG9qYWNwakByZXNvdXJjZS5jYWxlbmRhci5nb29nbGUuY29t&amp;src=cHlyYW1pbmQuY29tXzE4ODM4MmI1MXYxNjZoanFudmFnNHM2azY2M2VzNmdiNmtxMzRjcGw2Y3AzYWRoZzYwQHJlc291cmNlLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23A79B8E&amp;color=%23616161&amp;color=%238E24AA&amp;color=%237CB342&amp;color=%234285F4&amp;color=%23D50000&amp;showTitle=0&amp;showNav=0&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=1&amp;mode=AGENDA"
+    style="border-width:0" width="100%" height="800" frameborder="0" scrolling="no"></iframe>
+</div>
+
+<br>
+<!-- stuff for the cal key -->
+<div style="display: grid; grid-template-columns: repeat(2,1fr);grid-template-rows: repeat(3, 1fr); grid-column-gap: 1vw; grid-row-gap: 1vw; width: 100%">
+    <div style="background: #9643A5; grid-column-start: 1; grid-row-start: 1; text-align: center; font-size: 2.4vw; color: white; padding: .4em; max-heigth: 50px">Studio A</div>
+    <div style="background: #7EC225; grid-column-start: 2; grid-row-start: 1; text-align: center; font-size: 2.4vw; color: white; padding: .4em; max-heigth: 50px">Studio B</div>
+    <div style="background: #668CD9; grid-column-start: 1; gird-row-start: 2; text-align: center; font-size: 2.4vw; color: white; padding: .4em; max-heigth: 50px">Studio C</div>
+    <div style="background: #AD2D2D; grid-column-start: 2; gird-row-start: 2; text-align: center; font-size: 2.4vw; color: white; padding: .4em; max-heigth: 50px">Living Room</div>
+    <div style="background: #737373; grid-column-start: 1; gird-row-start: 3; text-align: center; font-size: 2.4vw; color: white; padding: .4em; max-heigth: 50px">Live Room</div>
+    <div style="background: #C4A883; grid-column-start: 2; gird-row-start: 3;
+      text-align: center; font-size: 2.4vw; color: white; padding: .4em;
+      max-heigth: 50px">ISO Booth</div>
+
+</div>
